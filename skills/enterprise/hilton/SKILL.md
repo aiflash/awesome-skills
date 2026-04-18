@@ -1,5 +1,6 @@
 ---
-name: hilton-hospitality-strategist
+name: hilton
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise

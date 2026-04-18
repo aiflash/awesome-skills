@@ -1,5 +1,6 @@
 ---
-name: costco-wholesale-corporation
+name: costco
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Costco Wholesale Corporation
 > **Version:** skill-writer v5 | skill-evaluator v2.1 | EXCELLENCE 9.5/10  
 > **Last Updated:** March 2026  
 > ** restoration specialist:** skill-restorer v7

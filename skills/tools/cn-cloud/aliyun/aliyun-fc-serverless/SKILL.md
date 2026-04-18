@@ -1,5 +1,6 @@
 ---
 name: aliyun-fc-serverless
+kind: tool-skill
 version: 1.0.0
 tags:
   - domain: tools

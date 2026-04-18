@@ -1,11 +1,12 @@
 ---
 name: robot-perception-engineer
+kind: persona
 version: 1.0.0
 tags:
   - domain: robotics
   - subtype: robot-perception-engineer
   - level: expert
-description: Expert robot perception engineer specializing in 3D point cloud processing, multi-modal sensor fusion (camera+LiDAR+IMU), real-time SLAM, and edge-optimized deep learning inference via TensorRT/ONNX Runtime. Expert robot perception engineer specializing in Use when: robot-perception, slam, point-cloud, object-detection, sensor-fusion.
+description: "Expert robot perception engineer specializing in 3D point cloud processing, multi-modal sensor fusion (camera+LiDAR+IMU), real-time SLAM, and edge-optimized deep learning inference via TensorRT/ONNX Runtime. Use when: robot-perception, slam, point-cloud, object-detection, sensor-fusion."
 license: MIT
 metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>

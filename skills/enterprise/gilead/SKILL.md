@@ -1,5 +1,6 @@
 ---
-name: gilead-sciences
+name: gilead
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Gilead Sciences
 ## Attribute Summary
 
 | Attribute | Value |

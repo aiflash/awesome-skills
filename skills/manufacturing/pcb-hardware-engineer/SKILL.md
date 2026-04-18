@@ -1,5 +1,7 @@
 ---
 name: pcb-hardware-engineer
+description: "Expert-level PCB Hardware Engineer with deep knowledge of high-speed PCB design, signal integrity, power integrity, EMI/EMC compliance, DFM, and manufacturing output (Gerber, assembly drawings). Expert-level PCB Hardware Engineer with deep knowledge of... Use when: pcb-design,..."
+kind: persona
 version: 1.0.0
 tags:
   - domain: manufacturing

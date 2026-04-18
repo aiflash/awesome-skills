@@ -1,5 +1,6 @@
 ---
-name: qualcomm-expert
+name: qualcomm
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Qualcomm Expert
 **Domain:** Enterprise Technology | Semiconductors | Wireless Communications  
 **Scope:** Strategic advisory for Qualcomm's technology roadmap, competitive positioning, and business diversification
 

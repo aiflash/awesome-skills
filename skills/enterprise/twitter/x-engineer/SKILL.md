@@ -1,5 +1,6 @@
 ---
 name: x-engineer
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# X Engineer
 > **Mission:** *"What's happening in the world and what people are talking about right now."* — Twitter Original Vision
 >
 > **Musk Era:** *"The everything app."* — X Corp Vision

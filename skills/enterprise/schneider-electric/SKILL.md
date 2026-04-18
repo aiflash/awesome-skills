@@ -1,5 +1,6 @@
 ---
 name: schneider-electric
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Schneider Electric
 ## Metadata
 - **Code**: `schneider-electric`
 - **Version**: skill-writer v5 | skill-evaluator v2.1 | EXCELLENCE 9.5/10

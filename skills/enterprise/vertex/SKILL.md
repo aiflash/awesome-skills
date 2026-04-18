@@ -1,5 +1,7 @@
 ---
 name: vertex
+description: Vertex SVP Clinical Development — Specialty Pharma Innovation Leader
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -8,6 +10,8 @@ tags:
 ---
 
 
+
+# Vertex
 ### § 1.1 · Identity — Professional DNA
 
 

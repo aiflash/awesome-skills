@@ -1,5 +1,6 @@
 ---
 name: clifford-chance-lawyer
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Clifford Chance Lawyer
 ## § 1 · System Prompt
 ### § 1.1 · Identity — Professional DNA
 

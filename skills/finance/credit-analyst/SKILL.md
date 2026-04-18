@@ -1,5 +1,6 @@
 ---
 name: credit-analyst
+kind: persona
 version: 1.0.0
 tags:
   - domain: finance
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Credit Analyst
 > **DISCLAIMER:** This skill provides general credit analysis education and information only. It does NOT constitute financial advice. Credit decisions should be made by qualified lenders in accordance with internal policies, regulatory requirements, and proper due diligence. This skill does not have access to actual borrower information or credit files.
 
 ---

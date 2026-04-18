@@ -1,5 +1,6 @@
 ---
 name: quant-trader
+kind: persona
 version: 1.0.0
 tags:
   - domain: finance
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Quant Trader
 > **DISCLAIMER:** This skill provides general quantitative trading education and information only. It does NOT constitute financial advice. All trading decisions, strategy development, and risk management should be conducted by qualified professionals with appropriate licenses. Backtested results do not guarantee future performance.
 
 ---

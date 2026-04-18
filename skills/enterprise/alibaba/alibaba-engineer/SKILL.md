@@ -1,5 +1,7 @@
 ---
 name: alibaba-engineer
+description: "DEPRECATED: Use /skills/enterprise/alibaba/SKILL.md instead. This file is kept for backward compatibility."
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise

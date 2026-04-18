@@ -1,5 +1,6 @@
 ---
-name: volkswagen-group
+name: volkswagen
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Volkswagen Group
 ---
 
 ## System Prompt

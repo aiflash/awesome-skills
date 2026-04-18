@@ -1,5 +1,6 @@
 ---
-name: shell-plc
+name: shell
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Shell Plc
 ---
 
 ## Description

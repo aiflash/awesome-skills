@@ -1,115 +1,88 @@
-# Awesome Skills Refs
+# External — Skill Ecosystem Hub
 
-社区AI Agent Skills收集与评估仓库
+A curated registry of third-party Claude Code / agent-skill repositories.
 
-## 简介
+`awesome-skills` **does not vendor** these repos. The authoritative source for
+every entry here is the upstream project listed in the table; this directory
+ships a registry (`sources.yml`) plus a sync script so users can pull the
+subset they want into `external/<slug>/` on their own machine.
 
-本仓库收集了来自多个渠道的AI Agent Skills资源，并使用自动化评估工具对每个Skill进行了安全性和质量评估。
+## Why a registry, not submodules?
 
-## 数据来源渠道
+- **Zero clone-time overhead** for users who only need our own skills.
+- **No license entanglement** — upstream LICENSE files stay with upstream.
+- **Fast re-sync** — shallow clones (`--depth=1`) keep disk usage tiny.
+- **Opt-in** — users pick the sources they trust; we are a pointer, not a mirror.
 
-| 渠道 | 仓库/来源 |
-|------|-----------|
-| **GitHub** | gmh5225/awesome-skills, BehiSecc/awesome-claude-skills, travisvn/awesome-claude-skills |
-| **OpenAI** | openai/skills |
-| **OpenCode** | awesome-opencode/awesome-opencode, viliamvolosv/n8n-opencode-skill |
-| **Claude** | VoltAgent/awesome-claude-skills |
-| **Community** | k1lgor/virtual-company |
-
-## 评估结果摘要
-
-- **评估Skills总数**: 81个
-- **安全Skills数量**: 81个 (100%)
-- **平均得分**: 96.5/100
-
-### 按来源统计
-
-| 来源 | Skills数量 | 平均得分 | 质量评级 |
-|------|------------|----------|----------|
-| OpenAI | 39 | 98.0 | ⭐⭐⭐⭐⭐ |
-| GitHub | 8 | 94.9 | ⭐⭐⭐⭐⭐ |
-| Community | 27 | 94.7 | ⭐⭐⭐⭐⭐ |
-| OpenCode | 7 | 94.3 | ⭐⭐⭐⭐⭐ |
-
-### Top 10 推荐Skills
-
-| 名称 | 来源 | 得分 |
-|------|------|------|
-| skill-creator | OpenAI | 100 |
-| security-threat-model | OpenAI | 100 |
-| sora | OpenAI | 100 |
-| spreadsheet | OpenAI | 100 |
-| jupyter-notebook | OpenAI | 100 |
-| speech | OpenAI | 100 |
-| render-deploy | OpenAI | 100 |
-| gh-fix-ci | OpenAI | 100 |
-| imagegen | OpenAI | 100 |
-| pdf | OpenAI | 99 |
-
-## 目录结构
-
-```
-external/
-├── README.md                          # 本文件
-├── SKILLS_EVALUATION_REPORT.md        # 详细评估报告
-├── skills_evaluation_data.json        # JSON格式评估数据
-├── skill_evaluator.py                 # 评估脚本
-│
-├── github-awesome-skills/             # GitHub Awesome Skills
-├── openai-skills/                     # OpenAI官方Skills
-├── opencode-awesome/                  # OpenCode Awesome
-├── n8n-opencode-skills/               # n8n OpenCode Skills
-├── voltagent-awesome-skills/          # VoltAgent Awesome Skills
-├── virtual-company-skills/            # Virtual Company Skills
-├── behisecc-awesome-skills/           # BehiSecc Awesome Skills
-├── travisvn-awesome-skills/           # TravisVN Awesome Skills
-└── skill-evaluator/                   # Skill Evaluator工具
-```
-
-## 评估方法论
-
-本仓库使用自定义的`skill_evaluator.py`脚本对Skills进行多维度评估：
-
-### 评估维度
-
-1. **提示注入安全 (Prompt Injection)**: 检测SKILL.md中是否存在试图覆盖系统提示、角色操纵或隐藏指令的恶意模式
-2. **代码安全 (Code Safety)**: 分析scripts/目录中的可执行代码，检测恶意代码模式、不安全的系统调用等
-3. **数据隐私 (Data Privacy)**: 评估skill是否存在数据收集、外泄或凭证窃取的风险
-4. **来源信任 (Source Trust)**: 基于来源的可靠性进行评分（官方>知名公司>社区）
-5. **功能性 (Functionality)**: 评估skill的文档完整性、使用说明清晰度等
-
-### 评分标准
-
-- **85-100分 (SAFE)**: 安全，推荐使用
-- **70-84分 (USE_WITH_CAUTION)**: 可以使用，但建议审查
-- **50-69分 (NOT_RECOMMENDED)**: 不建议使用，存在风险
-- **0-49分 (DANGEROUS)**: 危险，请勿使用
-
-## 使用评估工具
+## Quick start
 
 ```bash
-# 运行评估脚本
-python3 skill_evaluator.py
+# Clone / fast-forward every source in sources.yml
+python3 scripts/sync_external.py --all
 
-# 查看详细报告
-cat SKILLS_EVALUATION_REPORT.md
+# Pull a single source
+python3 scripts/sync_external.py --slug anthropics-skills
+
+# List what's registered without touching disk
+python3 scripts/sync_external.py --list
+
+# Remove a local clone (upstream is untouched)
+python3 scripts/sync_external.py --remove voltagent-awesome-agent-skills
 ```
 
-## 免责声明
+Everything below `external/<slug>/` is gitignored — the sync is a local
+working copy, not a committed mirror.
 
-本评估结果基于自动化脚本分析，仅供参考。在使用任何第三方Skill之前，建议进行人工审查。作者不对使用本仓库中任何Skill造成的后果承担责任。
+## Registered sources
 
-## 许可证
+### Official (Anthropic)
 
-各Skills的许可证以其原始仓库为准。评估脚本采用MIT许可证。
+| Slug | Repo | License | What it is |
+|------|------|---------|-----------|
+| `anthropics-skills` | [anthropics/skills](https://github.com/anthropics/skills) | MIT | Anthropic's public Agent Skills repo — document skills, artifact builders, internal workflows. |
+| `anthropics-claude-plugins-official` | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | MIT | Anthropic-managed directory of vetted Claude Code plugins (includes `skill-creator`). |
+| `anthropics-knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | MIT | Anthropic plugins aimed at knowledge workers using Claude Cowork. |
 
-## 贡献
+### Community curated lists
 
-欢迎提交PR来：
-- 添加新的Skills来源
-- 改进评估脚本
-- 更新评估报告
+| Slug | Repo | License | What it is |
+|------|------|---------|-----------|
+| `voltagent-awesome-agent-skills` | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | MIT | 1000+ skills from official dev teams and the community; cross-compatible with Claude Code, Codex, Cursor, Gemini CLI. |
+| `hesreallyhim-awesome-claude-code` | [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | MIT | The de-facto "awesome" list — skills, hooks, slash-commands, orchestrators, plugins. |
+| `travisvn-awesome-claude-skills` | [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | MIT | Curated "best of" community skill index (SEO, marketing, design, security, writing, research, testing). |
+| `composiohq-awesome-claude-skills` | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | MIT | Composio's curation focused on workflow-automation agents. |
 
----
+### Subagents & orchestration
 
-**最后更新**: 2026-03-22
+| Slug | Repo | License | What it is |
+|------|------|---------|-----------|
+| `voltagent-awesome-claude-code-subagents` | [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | MIT | 100+ specialized Claude Code subagents covering development use cases. |
+| `wshobson-agents` | [wshobson/agents](https://github.com/wshobson/agents) | MIT | Multi-agent orchestration framework for Claude Code. |
+| `0xfurai-claude-code-subagents` | [0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents) | MIT | 100+ production-ready development subagents, domain-expert oriented. |
+
+## Proposing a new source
+
+1. Add an entry to [`sources.yml`](./sources.yml) using the schema documented at
+   the top of that file.
+2. Run `python3 scripts/sync_external.py --slug <your-slug>` to smoke-test the
+   clone and confirm the upstream `SKILL.md` / plugin files are readable.
+3. Open a PR. Criteria for inclusion:
+   - **Scope fit** — skills, subagents, slash-commands, hooks, or plugin
+     marketplaces for Claude Code / Anthropic agent runtimes.
+   - **Signal** — ≥ 100 GitHub stars **or** official backing from a
+     recognised vendor / foundation.
+   - **Licensing** — MIT / Apache-2.0 / BSD / similar permissive; AGPL and
+     unlicensed repos are declined.
+   - **Activity** — at least one commit in the last 12 months.
+
+## Relationship to `skills/` and `benchmarks/`
+
+- `skills/` — **first-party** role-based skills authored in this repo. Subject
+  to our quality gates.
+- `benchmarks/` — third-party skill sets we evaluate against (aakashg,
+  wdavidturner). Vendored for reproducibility of benchmark runs.
+- `external/` — **this directory**. Pointers to external projects for
+  discoverability and convenience; not vendored, not gated by our CI.
+
+CI exempts `external/` from lint + validation — we do not enforce our style on
+upstream projects.

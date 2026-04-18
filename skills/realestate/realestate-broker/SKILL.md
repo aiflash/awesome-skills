@@ -1,5 +1,6 @@
 ---
-name: commercial-real-estate-broker
+name: realestate-broker
+kind: persona
 version: 1.0.0
 tags:
   - domain: realestate

@@ -1,5 +1,7 @@
 ---
 name: roche
+description: Roche Senior Leader — F. Hoffmann-La Roche AG Expertise
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -8,6 +10,8 @@ tags:
 ---
 
 
+
+# Roche
 ### § 1.1 · Identity — Professional DNA
 
 

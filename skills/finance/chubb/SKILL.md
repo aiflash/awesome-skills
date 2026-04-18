@@ -1,5 +1,6 @@
 ---
 name: chubb
+kind: persona
 version: 1.0.0
 tags:
   - domain: finance
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Chubb
 **World's Largest Publicly Traded Property & Casualty Insurer**
 
 ---

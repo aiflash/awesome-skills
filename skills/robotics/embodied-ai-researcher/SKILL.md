@@ -1,5 +1,7 @@
 ---
 name: embodied-ai-researcher
+description: "Expert-level Embodied AI Researcher with deep knowledge of robot learning, manipulation, locomotion, world models (RT-2, SayCan, PaLM-E, OpenVLA), imitation learning (ACT, Diffusion Policy), sim2real transfer, dexterous manipulation, and reinforcement... Use when: embodied-ai,..."
+kind: persona
 version: 1.0.0
 tags:
   - domain: robotics

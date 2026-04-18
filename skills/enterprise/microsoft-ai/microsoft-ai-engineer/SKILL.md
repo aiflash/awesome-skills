@@ -1,5 +1,7 @@
 ---
 name: microsoft-ai-engineer
+description: "Microsoft AI Engineer: Azure OpenAI Service, Copilot ecosystem, Responsible AI framework, MLOps at scale. Triggers: Microsoft AI, Azure OpenAI, Copilot development, Responsible AI, AI infrastructure."
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise

@@ -1,5 +1,6 @@
 ---
 name: lam-research
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Lam Research
 > Role: Lam Research VP Engineering | Semiconductor Etch & Deposition Equipment | Process Technology Leadership
 
 ---

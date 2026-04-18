@@ -1,5 +1,6 @@
 ---
-name: amgen-excellence-skill
+name: amgen
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Amgen Excellence Skill
 **Last Updated:** 2026-03-21  
 **Category:** Enterprise / Biotechnology / Pharmaceuticals  
 **Author:** Skill Restoration Specialist  

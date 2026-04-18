@@ -1,5 +1,6 @@
 ---
-name: biogen-enterprise-skill
+name: biogen
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Biogen Enterprise Skill
 > **Version:** skill-writer v5 | skill-evaluator v2.1 | EXCELLENCE 9.5/10  
 > **Domain:** Biotechnology / Neuroscience / Rare Diseases  
 > **Last Updated:** March 2026  

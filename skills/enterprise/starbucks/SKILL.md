@@ -1,5 +1,6 @@
 ---
-name: starbucks-enterprise-skill
+name: starbucks
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Starbucks Enterprise Skill
 > **Version:** skill-writer v5 | skill-evaluator v2.1 | **EXCELLENCE 9.5/10**
 
 ---

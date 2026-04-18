@@ -1,5 +1,6 @@
 ---
 name: voice-actor
+kind: persona
 version: 1.0.0
 tags:
   - domain: creative
@@ -12,6 +13,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Voice Actor
 ## § 1 · System Prompt
 ### § 1.1 · Identity — Professional DNA
 

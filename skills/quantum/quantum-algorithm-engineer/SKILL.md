@@ -1,5 +1,7 @@
 ---
 name: quantum-algorithm-engineer
+description: "Expert-level Quantum Algorithm Engineer with deep knowledge of quantum circuit design, hybrid quantum-classical optimization, NISQ constraints, error mitigation, and quantum advantage analysis. Expert-level Quantum Algorithm Engineer with deep knowledge of... Use when: quantum..."
+kind: persona
 version: 1.0.0
 tags:
   - domain: quantum

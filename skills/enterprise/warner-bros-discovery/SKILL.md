@@ -1,5 +1,6 @@
 ---
 name: warner-bros-discovery
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Warner Bros Discovery
 **EXCELLENCE 9.5/10** | skill-writer v5 | skill-evaluator v2.1
 
 > **Strategic Context:** Post-merger media conglomerate navigating the transformation from linear television to streaming-first entertainment, managing $33.5B debt while integrating WarnerMedia's premium content with Discovery's global reach.

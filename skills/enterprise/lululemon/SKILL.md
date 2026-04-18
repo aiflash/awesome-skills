@@ -1,5 +1,6 @@
 ---
-name: lululemon-retail-strategist
+name: lululemon
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise

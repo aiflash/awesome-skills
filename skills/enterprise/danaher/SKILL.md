@@ -1,5 +1,6 @@
 ---
 name: danaher
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Danaher
 <!-- 
   PROGRESSIVE DISCLOSURE NAVIGATION:
   §1 SYSTEM PROMPT (Core Identity - Always Active)

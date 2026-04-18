@@ -1,5 +1,6 @@
 ---
-name: totalenergies-enterprise-skill
+name: totalenergies
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
@@ -11,6 +12,8 @@ metadata:
   author: theNeoAI <lucas_hsueh@hotmail.com>
 ---
 
+
+# Totalenergies Enterprise Skill
 ---
 ## Metadata
 - **Version**: skill-writer v5 | skill-evaluator v2.1 | EXCELLENCE 9.5/10

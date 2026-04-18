@@ -1,5 +1,6 @@
 ---
-name: datadog-observability--security-platform
+name: datadog
+kind: persona
 version: 1.0.0
 tags:
   - domain: enterprise
